@@ -11,8 +11,8 @@ cp  compton $home_conf/compton.conf
 cp  dunstrc $home_conf/dunst/dunstrc
 cp  i3 $home_conf/i3/config
 cp  lilyterm $home_conf/lilyterm/default.conf
-cp  ncmcpp-bindings $HOME/.ncmpcpp/bindings
-cp  ncmcpp-config $HOME/.ncmpcpp/config
+cp  ncmpcpp-bindings $HOME/.ncmpcpp/bindings
+cp  ncmpcpp-config $HOME/.ncmpcpp/config
 cp  polybar $home_conf/polybar/default
 cp  polybar-launch $home_conf/polybar/launch.sh
 cp  rofi $home_conf/rofi/config
