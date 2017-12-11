@@ -1,0 +1,5 @@
+#!/bin/sh
+tmux new-session -d -s music -n player 'ncmpcpp' 
+tmux split-window -d -t music:player -v 'cava'
+tmux source-file ~/.config/tmux/tmux.conf   
+lilyterm -s -x tmux a -t music

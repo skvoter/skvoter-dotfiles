@@ -1,0 +1,8 @@
+oldps=$(ps aux | grep 'openvpn' | awk 'NR==2' | awk '{print $2}')
+if [-z "$oldps" ]; then
+    echo "No vpn"
+else
+    sudo kill -9 $oldps
+fi
+sudo openvpn --config ~/.openvpnc/client2.ovpn &
+

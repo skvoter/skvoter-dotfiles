@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+i3lock -n --indicator -k --blur 11\
+    --ringcolor=ffffff66 \
+    --keyhlcolor=ffffff88 --bshlcolor=ff000088\
+    --timepos="ix-cw/2:iy-ch" --timecolor=cacaca99 \
+    --datecolor=cacaca99 --datefont="xos4 Terminus" \
+    --timefont="xos4 Terminus" \
+    --timesize=48 --datesize=24 \
+    --insidevercolor=fecf4d00 --insidewrongcolor=d23c3d00 \
+    --ringvercolor=ffaa0066 --ringwrongcolor=ff000066 --indpos="x+(w/2):y+(h/2)" \
+    --radius=30 --veriftext="" --wrongtext=""
