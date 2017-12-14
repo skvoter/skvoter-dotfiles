@@ -1,8 +1,7 @@
 # dotfiles
 My Arch/i3 setup
 
-![scrot](https://i.imgur.com/P5wsgYR.png)
-all screenshots - [https://imgur.com/a/uzC3K]
+![scrot](https://i.imgur.com/UmriHSN.png)
 
 ## Setup
 
