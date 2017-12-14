@@ -1,7 +1,7 @@
 # dotfiles
 My Arch/i3 setup
 
-![scrot](https://i.imgur.com/UmriHSN.png)
+![scrot](https://i.imgur.com/r58Jvdw.png)
 
 ## Setup
 
