@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export HOME=/home/skvoter
 # Vars
 home_conf=$HOME/.config
 scripts_dir=/usr/local/bin
