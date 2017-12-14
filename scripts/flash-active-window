@@ -12,7 +12,7 @@ def on_window_focus(i3, e):
     focused = i3.get_tree().find_focused()
 #    print(focused.name)
     if focused.name:
-        i3.command('[class="[.]*"] border pixel 0')
+        i3.command('[class="[.]*"] border pixel 1')
         i3.command("border pixel 1")
         #i3.command('gaps outer current minus 4')
         #i3.command('gaps inner current minus 4')
