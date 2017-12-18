@@ -92,6 +92,13 @@ gitlogin () {eval "$(ssh-agent -s)"; ssh-add ~/.ssh/"$@";}
 celerywork () { celery -A "$@" worker --loglevel=INFO; }
 celerybeat () { celery -A "$@" beat -l info -S django; }
 
+function cd {
+    builtin cd "$@"
+    if [ -d ".venv" ] ; then
+        source .venv/bin/activate
+    fi
+}
+
 set -o vi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
