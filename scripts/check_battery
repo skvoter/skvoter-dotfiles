@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BATTINFO=`acpi -b | grep "Battery 0"`
+BATTINFO=`acpi -b | grep -v "rate information unavailable"`
 if [[ `echo $BATTINFO | grep Discharging` && `echo $BATTINFO | cut -f 4 -d " "` < 35 ]]; then
     DISPLAY=:0.0 /usr/bin/notify-send "Low battery!" "$BATTINFO"
 fi
