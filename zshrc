@@ -52,7 +52,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions vi-mode)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -137,8 +137,5 @@ SPACESHIP_PROMPT_ORDER=(
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-source ~/.rvm/scripts/rvm
- 
 
 eval $(thefuck --alias)
