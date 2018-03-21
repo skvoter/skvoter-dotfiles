@@ -10,8 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 
-gaps outer 10
-gaps inner 20
+# gaps inner 10
 smart_borders on
 set $mod Mod4
 
