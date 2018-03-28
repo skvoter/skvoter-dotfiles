@@ -4,5 +4,5 @@ if [-z "$oldps" ]; then
 else
     sudo kill -9 $oldps
 fi
-sudo openvpn --config ~/.openvpnc/client2.ovpn &
+sudo openvpn --config ~/.openvpnc/client1.ovpn &
 

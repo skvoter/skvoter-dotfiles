@@ -168,7 +168,7 @@ exec_always --no-startup-id "devmon --no-gui"
 exec_always --no-startup-id "flash-active-window"
 exec_always --no-startup-id "mpd"
 # Lock screen
-bindsym Ctrl+Shift+l exec lock
+bindsym Ctrl+Shift+l exec "betterlockscreen -l" 
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +5% #increase sound volume

@@ -8,5 +8,4 @@ compton --dbus &
 dunst &
 /usr/local/bin/hotplug_monitor.sh &
 ~/.fehbg &
-/usr/local/bin/vpn-external &
 exec i3
