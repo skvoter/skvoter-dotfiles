@@ -1,0 +1,9 @@
+# /bin/bash
+setxkbmap "us,ru" ",winkeys" "grp:caps_toggle,grp_led:caps"
+xset b off
+gxkb &
+compton --dbus &
+dunst &
+/usr/local/bin/hotplug_monitor.sh &
+feh --bg-fill ~/Downloads/xz9m0cz0fbg11.png 
+wal -R

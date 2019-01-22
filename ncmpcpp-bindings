@@ -1,6 +1,0 @@
-def_key "k"
-    scroll_up
-def_key "j"
-    scroll_down
-def_key "ctrl-c"
-    run_external_command "musickill"

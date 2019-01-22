@@ -10,10 +10,10 @@ version = 0.9.9
 font_name = xos4 Terminus 8
 
 # The default column of vte terminal.
-column = 221
+column = 225
 
 # The default row of vte terminal.
-row = 56
+row = 61
 
 # Use true opacity in vte box.
 # 0: do NOT use rgba, 1: force to use rgba.
@@ -29,7 +29,7 @@ fullscreen = 0
 transparent_window = 1
 
 # The opacity of transparent window.
-window_opacity = 0.051
+window_opacity = 0.041
 
 # The opacity of transparent window when inactive.
 # Left it blank to disable this feature.
@@ -37,7 +37,7 @@ window_opacity_inactive =
 
 # Use transparent background.
 # It will use true transparent if the window manager were composited.
-transparent_background = 0
+transparent_background = 1
 
 # The saturation of transparent background.
 background_saturation = 0.150
@@ -480,7 +480,7 @@ inactive_brightness = 0.200
 
 # The ANSI color code for Normal Black
 # You may use black, #000000 or #000000000000 here.
-Color0 =  #111111
+Color0 = #111111
 
 # The ANSI color code for Normal Red
 # You may use black, #000000 or #000000000000 here.

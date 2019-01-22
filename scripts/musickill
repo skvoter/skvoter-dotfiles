@@ -1,2 +1,0 @@
-#!/bin/sh
-tmux kill-session & pkill cava & pkill ncmpcpp & pkill tmux

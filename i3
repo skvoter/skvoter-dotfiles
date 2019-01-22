@@ -11,12 +11,11 @@
 
 
 # gaps inner 10
-smart_borders on
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:xos4 Terminus 8
+font pango:xos4 Terminess Powerline 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -35,7 +34,7 @@ floating_modifier $mod
 client.focused #cccccc #dddddd #333333 #2e9ef4 #aaaaaa
 
 # start a terminal
-bindsym $mod+Return exec lilyterm
+bindsym $mod+Return exec urxvt
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -159,21 +158,23 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id "devmon --no-gui"
-exec_always --no-startup-id "flash-active-window"
-exec_always --no-startup-id "mpd"
+# exec_always --no-startup-id "flash-active-window"
+exec_always --no-startup-id "udiskie -2 -s -F"
+exec_always --no-startup-id "light-locker"
+#
 # Lock screen
-bindsym Ctrl+Shift+l exec "betterlockscreen -l" 
+bindsym Ctrl+Shift+l exec "light-locker-command -l" 
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $(pactl info | grep Sink | awk '{print $3}') +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $(pactl info | grep Sink | awk '{print $3}') -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $(pactl info | grep Sink | awk '{print $3}') toggle" # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness

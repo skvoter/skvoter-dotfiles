@@ -1,1 +1,2 @@
-rofi.theme: /usr/share/rofi/themes/skvoterside.rasi
+rofi.theme: /usr/share/rofi/themes/Monokai.rasi
+rofi.font: xos4\ Terminess\ Powerline 10
